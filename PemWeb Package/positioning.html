@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contoh posisition</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            border: 2px solid purple;
+            padding: 20px;
+            position: relative;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+        .static {
+            position: static;
+            background-color: lightgrey;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .relative {
+            position: relative;
+            background-color: red;
+            padding: 10px;
+            left: 10px;
+            top: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: lightcoral;
+            padding: 10px;
+            right: 10px;
+            top: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: brown;
+            padding: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: yellow;
+            padding: 10px;
+            top: 0;
+        }
+
+        .spacer {
+            height: 5000px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>contoh css position</h2>
+    <div class="static">iki adalah elemen dengan posisi <b>static</b> (default)</div>
+    <div class="relative">iki adalah elemen dengan posisi <b>relative</b> (bergerak pada posisi aslinya)</div>
+    <div class="container">
+        <div class="absolute">iki elemen posisi <b>absolute</b>(di dalam container)</div>
+        <p>container ini memiliki <b>position: relative</b>, jadi, elemen absolute berada di dalamnya</p>
+    </div>
+    <div class="sticky">iki adalah elemen dengan posisi <b>sticky</b> (akan tetap pada atasnya saat di scroll)</div>
+    <div class="spacer"></div>
+    <div class="fixed">ini adalah elemen dengan posisi <b>fixed</b> (tetap di sudut bawah)</div>
+</body>
+
+</html>
