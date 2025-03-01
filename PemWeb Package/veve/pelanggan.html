@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Master Pelanggan</title>
+    <link rel="stylesheet" type="text/css" href="pelanggan.css">
+    <script>
+        function validateForm() {
+            let nama = document.getElementById("nama").value;
+            let alamat = document.getElementById("alamat").value;
+            let nomor_hp = document.getElementById("nomor_hp").value;
+            let email = document.getElementById("email").value;
+            let mitra = document.getElementById("mitra").value;
+
+            let namaPattern = /^[A-Za-z ]+$/;
+            let nomorPattern = /^[0-9]+$/;
+
+            if (!nama.match(namaPattern)) {
+                alert("Nama hanya boleh berisi huruf dan harus diisi.");
+                return false;
+            }
+            if (alamat === "") {
+                alert("Alamat harus diisi.");
+                return false;
+            }
+            if (!nomor_hp.match(nomorPattern)) {
+                alert("Nomor HP hanya boleh berisi angka dan harus diisi.");
+                return false;
+            }
+            if (mitra === "") {
+                alert("Pilih mitra penukaran.");
+                return false;
+            }
+
+            alert("Data Anda berhasil direkam");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Master Pelanggan</h1>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomor_hp">Nomor HP</label>
+                <input type="text" id="nomor_hp" name="nomor_hp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (Opsional)</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="mitra">Pilih Mitra Penukaran</label>
+                <select id="mitra" name="mitra" required>
+                    <option value="">-- Pilih Mitra --</option>
+                    <option value="Mitra A">Mitra A</option>
+                    <option value="Mitra B">Mitra B</option>
+                    <option value="Mitra C">Mitra C</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
