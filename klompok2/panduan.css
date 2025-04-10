@@ -1,0 +1,39 @@
+/* Tambahan khusus untuk halaman panduan */
+.panduan-section {
+  background-color: #e0f7ec;
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panduan-title {
+  text-align: center;
+  font-size: 28px;
+  color: #007f5f;
+  margin-bottom: 20px;
+}
+
+.panduan-video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.panduan-video-container video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.panduan-deskripsi {
+  font-size: 16px;
+  color: #007f5f;
+  padding: 0 10px;
+}
+
+.panduan-deskripsi ol {
+  padding-left: 20px;
+}
