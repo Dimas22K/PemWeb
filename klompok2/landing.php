@@ -11,16 +11,17 @@
 <body>
     <header>
         <div class="navbar">
-            <a href="dashboard.html" class="logo">Sampah <span>Berkah</span></a>
+            <a href="landing.php" class="logo">
+                <img src="gambar/logosampahberkah.png" alt="">
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
                     <li><a href="riwayat.php">Riwayat</a></li>
-                    <li><a href="layanan.css">Layanan</a></li>
-                    <li><a href="#">Keuntungan</a></li>
-                    <li><a href="#">Panduan</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="panduan.html">Panduan</a></li>
                     <li><a href="#">Lokasi</a></li>
-                    <li><a href="#">Kontak Kami</a></li>
+                    <li><a href="kontak.html">Kontak Kami</a></li>
                 </ul>
             </nav>
             <a href="#" class="btn-masuk">Masuk</a>
@@ -52,7 +53,7 @@
                 <div><strong>500+</strong><br>Kolaborator Lokal</div>
                 <div><strong>30rb+</strong><br>Pengguna</div>
             </div>
-            <a href="#">Semua Tentang Kami di sini -></a>
+            <a href="tentang.html">Semua Tentang Kami di sini -></a>
         </div>
     </section>
 
@@ -99,13 +100,13 @@
         <div class="footer-grid">
             <div>
                 <p><strong>SampahBerkah</strong></p>
-                <p><a href="#">Tentang Kami</a></p>
-                <p><a href="#">Layanan</a></p>
+                <p><a href="tentang.html">Tentang Kami</a></p>
+                <p><a href="layanan.html">Layanan</a></p>
                 <p><a href="#">Mitra</a></p>
             </div>
             <div>
                 <p><strong>Informasi</strong></p>
-                <p><a href="#">Kontak Kami</a></p>
+                <p><a href="kontak.html">Kontak Kami</a></p>
                 <p><a href="#">Bantuan</a></p>
                 <p><a href="#">Syarat & Ketentuan</a></p>
                 <p><a href="#">Kebijakan Privasi</a></p>
