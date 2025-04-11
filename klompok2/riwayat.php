@@ -82,10 +82,12 @@ if (isset($_GET['hapus'])) {
     <div class="wrapper">
         <header>
             <div class="navbar">
-                <a href="landing.php" class="logo">Sampah <span>Berkah</span></a>
+                <a href="landing.php" class="logo">
+                <img src="gambar/logosampahberkah.png" alt="">
+                </a>
                 <nav>
                     <ul>
-                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
                         <li><a href="riwayat.php" class="active">Riwayat</a></li>
                         <li><a href="layanan.html">Layanan</a></li>
                         <li><a href="panduan.html">Panduan</a></li>
@@ -160,13 +162,13 @@ if (isset($_GET['hapus'])) {
             <div class="footer-grid">
                 <div>
                     <p><strong>SampahBerkah</strong></p>
-                    <p><a href="#">Tentang Kami</a></p>
-                    <p><a href="#">Layanan</a></p>
+                    <p><a href="tentang.html">Tentang Kami</a></p>
+                    <p><a href="layanan.html">Layanan</a></p>
                     <p><a href="#">Mitra</a></p>
                 </div>
                 <div>
                     <p><strong>Informasi</strong></p>
-                    <p><a href="#">Kontak Kami</a></p>
+                    <p><a href="kontak.html">Kontak Kami</a></p>
                     <p><a href="#">Bantuan</a></p>
                     <p><a href="#">Syarat & Ketentuan</a></p>
                     <p><a href="#">Kebijakan Privasi</a></p>
